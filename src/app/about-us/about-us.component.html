@@ -1,0 +1,57 @@
+<div class="bgAbout" [ngClass]="{'Is-PC' : IsPC}">
+
+    <div class="main" [ngClass]="{'Is-PC': IsPC}">
+
+        <ng-container class="flexcol height">
+            <!-- class flex 3 items -->
+
+            <ng-container>
+                <!-- Qui som? -->
+                <!-- class fondo --><br><br><br>
+                <div class="espai" [ngClass]="{'Is-PC': IsPC}">
+                    <h2 class="center">QUÉ ES CURSED DISSONANCES?</h2>
+                    <p class="text">Cursed Dissonances es un culto dedicado a la disonancia. <br> Nacimos durante la pandemia con la misión de dar más visibilidad a los estilos emergentes nacionales más experimentales y poco a poco hemos ido creciendo y ampliando fronteras.
+                        <br> A día de hoy, Cursed Dissonances es una asociación multidisciplinar autogestionada que intenta transmitir un impacto estético mediante todas las formas de expresión posibles. <br><br> Nuestro objetivo es crear un entorno cultural
+                        donde el arte y la tecnología tengan todo el protagonismo y huya de los convencionalismos y prácticas propios de la industria musical occidental. Cursed Dissonances NO es un sello discográfico ni promotora aunque ejerza funciones
+                        parecidas. <br><br> El Tekno es un sistema, nosotros solo somos sus operadores.
+
+                    </p>
+
+                </div>
+
+            </ng-container>
+            <div class="spacer2"></div>
+            <ng-container>
+                <!-- SoundSystem Sim -->
+                <!-- class fondo -->
+                <div class="espai" [ngClass]="{'Is-PC': IsPC}">
+                    <h2 class="center">SOUND SYSTEM SIMULATOR</h2>
+                    <p class="text">Estamos preparando las primeras versiones de una exposición con nuestra obra y la de otros artistas en un formato de realidad aumentada, pronto daremos más noticias.</p>
+
+                </div>
+            </ng-container>
+            <div class="spacer2"></div>
+            <div *ngIf="!IsPC">
+
+                <div class="spacer2"></div>
+                <div class="spacer2"></div>
+            </div>
+            <div class="flexrow center">
+                <a href="https://soundcloud.com/cursed_dissonances">
+                    <div class="soundcloud"></div>
+                </a>
+                <!-- //TODO: posar els .svg -->
+                <a href="https://cursed-dissonances.bandcamp.com/music">
+                    <div class="bandcamp"></div>
+                </a>
+                <a href="https://www.instagram.com/cursed.dissonances/">
+                    <div class="instagram"></div>
+                </a>
+
+            </div>
+            <div class="spacer2"></div>
+            <div class="spacer2"></div>
+
+        </ng-container>
+    </div>
+</div>

@@ -1,0 +1,92 @@
+<div class="bg height" [ngClass]="{'Is-PC' : IsPC}">
+
+    <div class="main" [ngClass]="{'Is-PC':IsPC}"> <br><br><br>
+        <div class="flexcol2 box" [ngClass]="{'Is-PC':IsPC}">
+            <!-- class fondo flex col 2 items -->
+            <ng-container>
+                <!-- title -->
+                <h2 class="width center">PLAYLISTS:</h2>
+                <div class="spacer">
+
+                </div>
+            </ng-container>
+
+            <div class="center">
+
+                <!-- phone -->
+                <!-- class flex col 2 items  -->
+                <div *ngIf="!IsPC" class="flexcol center">
+                    <!-- iframes guarros -->
+                    <!-- class center info + flex row wrap -->
+                    <!-- [ngClass]="{'Is-Phone': IsPhone}  flex row to col-->
+                    <iframe class="frame" frameBorder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1391405851&color=%23ff5500&visual=true"></iframe>
+                    <iframe class="frame" frameBorder="0" src="https://open.spotify.com/embed/playlist/22gfmR0EbuytGJsTExr3JM?utm_source=generator&theme=0"></iframe>
+
+                </div>
+                <ng-container *ngIf="IsPC">
+                    <!-- PC -->
+                    <!-- class flex col 2 items  -->
+                    <div class="flexrow center">
+                        <div class="framePC">
+                            <iframe frameBorder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1391405851&color=%23ff5500&visual=true"></iframe>
+                        </div>
+                        <div class="framePC">
+                            <iframe frameBorder="0" src="https://open.spotify.com/embed/playlist/22gfmR0EbuytGJsTExr3JM?utm_source=generator&theme=0"></iframe>
+                        </div>
+                        <!-- iframes guarros -->
+                        <!-- class center info + flex row wrap -->
+                        <!-- [ngClass]="{'Is-Phone': IsPhone}  flex row to col-->
+
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+</div>
+<div class="bg height" [ngClass]="{'Is-PC' : IsPC}">
+
+    <div class="main" [ngClass]="{'Is-PC':IsPC}"> <br><br><br>
+        <div class="flexcol2 box" [ngClass]="{'Is-PC':IsPC}">
+            <!-- class fondo flex col 2 items -->
+            <ng-container>
+                <!-- title -->
+                <h2 class="width center">PLAYLISTS:</h2>
+                <div class="spacer">
+
+                </div>
+            </ng-container>
+
+            <div class="center">
+
+                <!-- phone -->
+                <!-- class flex col 2 items  -->
+                <div *ngIf="!IsPC" class="flexcol center">
+                    <!-- iframes guarros -->
+                    <!-- class center info + flex row wrap -->
+                    <!-- [ngClass]="{'Is-Phone': IsPhone}  flex row to col-->
+                    <iframe class="frame" frameBorder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1391405851&color=%23ff5500&visual=true"></iframe>
+                    <iframe class="frame" frameBorder="0" src="https://open.spotify.com/embed/playlist/22gfmR0EbuytGJsTExr3JM?utm_source=generator&theme=0"></iframe>
+
+                </div>
+                <ng-container *ngIf="IsPC">
+                    <!-- PC -->
+                    <!-- class flex col 2 items  -->
+                    <div class="flexrow center">
+                        <div class="framePC">
+                            <iframe frameBorder="0" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1391405851&color=%23ff5500&visual=true"></iframe>
+                        </div>
+                        <div class="framePC">
+                            <iframe frameBorder="0" src="https://open.spotify.com/embed/playlist/22gfmR0EbuytGJsTExr3JM?utm_source=generator&theme=0"></iframe>
+                        </div>
+                        <!-- iframes guarros -->
+                        <!-- class center info + flex row wrap -->
+                        <!-- [ngClass]="{'Is-Phone': IsPhone}  flex row to col-->
+
+                    </div>
+                </ng-container>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br>
+</div>

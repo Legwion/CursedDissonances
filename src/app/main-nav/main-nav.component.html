@@ -1,0 +1,73 @@
+<div class="height">
+
+    <mat-sidenav-container class="sidenav-container" *ngIf="!IsPC">
+
+        <mat-sidenav mode="over" #drawer class="sidenav bgblack" fixedInViewport [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="(isHandset$ | async) === false">
+            <ng-container>
+                <!-- *ngIf="!IsPC" -->
+                <!--ngIf show when small viewport  -->
+
+                <!-- <mat-toolbar>
+                        Menu
+                    </mat-toolbar> -->
+                <mat-nav-list class="white">
+                    <a class="white" mat-list-item [routerLink]="['home']">HOME</a>
+                    <a class="white" mat-list-item [routerLink]="['artist-list']">ARTISTS</a>
+                    <a class="white" mat-list-item [routerLink]="['aboutUs']">ABOUT US</a>
+                    <a class="white" mat-list-item [routerLink]="['playlists']">PLAYLISTS</a>
+                    <a class="white" mat-list-item href="https://www.cursed-dissonances.bandcamp.com" target="_blank" rel="noopener">LABEL</a>
+                </mat-nav-list>
+            </ng-container>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <div class="height">
+
+                <mat-toolbar class="bgblack" color="black">
+                    <button class="white" type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()" *ngIf="isHandset$ | async">
+                      <mat-icon class="white" aria-label="Side nav toggle icon">menu</mat-icon>
+                  </button>
+                    <ng-container>
+                        <!-- normal toolbar -->
+
+                        <span class="white">CursedDissonances</span>
+                        <ng-container>
+
+                        </ng-container>
+                    </ng-container>
+                </mat-toolbar>
+
+
+                <router-outlet></router-outlet>
+            </div>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+    <ng-container *ngIf="IsPC">
+
+        <mat-toolbar class="bgblack">
+            <mat-toolbar-row>
+                <div class="flexspace">
+
+                    <div><a mat-list-item [routerLink]="['home']">Cursed Dissonances</a></div>
+
+                    <div>
+                        <a class="routerlink" [routerLink]="['home']">  Home</a>
+                        <a class="routerlink" [routerLink]="['artist-list']">Artists</a>
+                        <a class="routerlink" [routerLink]="['aboutUs']">About Us</a>
+                        <a class="routerlink" [routerLink]="['playlists']">Playlists</a>
+                        <a class="routerlink" href="https://www.cursed-dissonances.bandcamp.com" target="_blank" rel="noopener noreferrer">Label</a>
+
+                    </div>
+                </div>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <!-- <div class="bgPC"> -->
+        <!-- <img src="/src/assets/BlackIrregulators.png" alt="bg"> -->
+
+        <div class="height">
+            <router-outlet></router-outlet>
+
+        </div>
+        <!-- </div> -->
+    </ng-container>
+</div>

@@ -1,0 +1,60 @@
+<div class="bg" [ngClass]="{'Is-PC' : IsPC}">
+
+    <ng-container class="flexcol">
+        <!-- class flex of 2 items in a column -->
+        <div class="center">
+            <img src="/../assets/logonobg.png" class="logo" [ngClass]="{'Is-PC': IsPC}">
+            <!-- logongbg -->
+            <!-- class center info -->
+            <!-- [ngClass]="{'Is-PC': IsPC} resize img  -->
+
+        </div>
+        <div class="main" [ngClass]="{'Is-PC': IsPC}">
+            <!-- class fondo + center info +  flex col -->
+            <!-- [ngClass]="{'Is-PC': IsPC}" flex col to row-->
+            <ng-container>
+                <div class=" flexcol embed" *ngIf="!IsPC">
+                    <!-- rituals a pelo iframe i tot -->
+                    <div class="center">
+
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3768483449/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/01-s-a-d-n-e-s-s">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 01: S̷̮̙͐́̚a̶͓̍d̷̪̮̼̍̏n̶̬̒͝ě̷̡̢̲s̷̢͈̻͗ṡ̶̪̝͜ by Acid Warlock x Ciklo</a></iframe>
+                    </div>
+                    <div class="center">
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1042230761/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/02-a-n-g-e-r">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 02: A̵̘̹̯͙̞̥͆̕n̴͔̳̭̩̩̤̜͛̽g̷̝̩̮̲̦͆̀̑e̴̦̗̘̮͈͙͐̈̕͠ͅr̶̳̻̰͕̔͐̒̉ͅ by Acid Vars x Nakkore</a></iframe>
+                    </div>
+                    <div class="center">
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1885909509/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/03-c-o-n-f-u-s-i-o-n">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 03: Ç̴̜͖̆͊̔ͅo̷̢̦̥̪̗͔̩̿n̸̥̫̤̲̔͐̈́̂́͜f̴̨͚̫͓̩̘̝̙̼͙̍͊̂̽̈́̕ͅû̶̢̥̦͓͙̣͓͔̲̰̰͐̿s̷̛̻̚i̷͉̼̤̠͙̮̱̟̜͕͙̓̑͊̃̚̚o̴̤͕͙̒̈́̊͒͗́͘ņ̷̧̯̹͉͙̻̍̽̒͊͠ by 2AGR3 X G.L.V. Z.</a></iframe>
+                    </div>
+                    <div class="center">
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2136570373/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/04-h-y-s-t-e-r-i-a">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 04: Ḣ̶̛͙y̴͈̓̕s̸̗̝̎͐t̴̫͛ě̶̜̫r̷̢̛i̸͕̚͠á̸̧̞ by Abex x The End is Night</a></iframe>
+                    </div>
+                    <div class="center">
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2430996845/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/ritual-05-dementia">Ritual 05: Dementia by Andiela x Acidosis</a></iframe>
+                    </div>
+                    <div class="center">
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3152228298/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/ritual-06-concern">Ritual 06: Concern by Nkh Nth x Reymon</a></iframe>
+                    </div>
+                    <div class="center">
+                        <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1393706131/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/ritual-07-unsettling">Ritual 07: Unsettling by Hobs x Moldetek</a></iframe>
+                    </div>
+                </div>
+                <div class=" flexrow center" *ngIf="IsPC">
+                    <!-- pc -->
+                    <!-- rituals a pelo iframe i tot -->
+
+                    <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3768483449/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/01-s-a-d-n-e-s-s">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 01: S̷̮̙͐́̚a̶͓̍d̷̪̮̼̍̏n̶̬̒͝ě̷̡̢̲s̷̢͈̻͗ṡ̶̪̝͜ by Acid Warlock x Ciklo</a></iframe>
+                    <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1042230761/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/02-a-n-g-e-r">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 02: A̵̘̹̯͙̞̥͆̕n̴͔̳̭̩̩̤̜͛̽g̷̝̩̮̲̦͆̀̑e̴̦̗̘̮͈͙͐̈̕͠ͅr̶̳̻̰͕̔͐̒̉ͅ by Acid Vars x Nakkore</a></iframe>
+                    <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1885909509/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/03-c-o-n-f-u-s-i-o-n">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 03: Ç̴̜͖̆͊̔ͅo̷̢̦̥̪̗͔̩̿n̸̥̫̤̲̔͐̈́̂́͜f̴̨͚̫͓̩̘̝̙̼͙̍͊̂̽̈́̕ͅû̶̢̥̦͓͙̣͓͔̲̰̰͐̿s̷̛̻̚i̷͉̼̤̠͙̮̱̟̜͕͙̓̑͊̃̚̚o̴̤͕͙̒̈́̊͒͗́͘ņ̷̧̯̹͉͙̻̍̽̒͊͠ by 2AGR3 X G.L.V. Z.</a></iframe>
+                    <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2136570373/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/04-h-y-s-t-e-r-i-a">𝕿𝖍𝖊 𝕽𝖎𝖙𝖚𝖆𝖑 04: Ḣ̶̛͙y̴͈̓̕s̸̗̝̎͐t̴̫͛ě̶̜̫r̷̢̛i̸͕̚͠á̸̧̞ by Abex x The End is Night</a></iframe>
+                    <iframe src="https://bandcamp.com/EmbeddedPlayer/album=2430996845/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/ritual-05-dementia">Ritual 05: Dementia by Andiela x Acidosis</a></iframe>
+                    <iframe src="https://bandcamp.com/EmbeddedPlayer/album=3152228298/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/ritual-06-concern">Ritual 06: Concern by Nkh Nth x Reymon</a></iframe>
+                    <iframe src="https://bandcamp.com/EmbeddedPlayer/album=1393706131/size=large/bgcol=333333/linkcol=ffffff/tracklist=false/transparent=true/" seamless><a href="https://cursed-dissonances.bandcamp.com/album/ritual-07-unsettling">Ritual 07: Unsettling by Hobs x Moldetek</a></iframe>
+                </div>
+                <br><br><br>
+            </ng-container>
+
+        </div>
+
+
+    </ng-container>
+</div>

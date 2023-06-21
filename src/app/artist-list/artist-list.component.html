@@ -1,0 +1,60 @@
+<ng-container>
+    <div class="flexcol center bgblack">
+        <!-- flex col 2 items DONE-->
+        <ng-container>
+            <div class="center">
+                <!-- title DONE -->
+                <!-- class center info DONE -->
+                <h1>OUR ARTISTS</h1>
+                <div class="breaker"></div>
+            </div>
+
+        </ng-container>
+        <ng-container>
+            <div>
+
+                <!-- link -->
+
+                <div class="flexcol" *ngIf="!IsPC">
+                    <!-- phone -->
+                    <div *ngFor="let artist of artistList; let i = index">
+                        <a [routerLink]="['/artist',i]">
+                            <div class="card">
+                                <h3>{{artist.name}}</h3>
+                                <img [src]="artist.img">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="flexrow center" *ngIf="IsPC">
+                    <!-- pc -->
+                    <div *ngFor="let artist of artistList; let i = index">
+
+                        <a [routerLink]="['/artist',i]">
+                            <div class="cardPC">
+                                <h3>{{artist.name}}</h3>
+                                <img [src]="artist.img">
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="center">
+                    <img src="/../assets/logonobg.png" class="logo" [ngClass]="{'Is-PC': IsPC}">
+                    <!-- logongbg -->
+                    <!-- class center info -->
+                    <!-- [ngClass]="{'Is-PC': IsPC} resize img  -->
+
+                </div>
+            </div>
+
+            <!-- class flex col wrap + center info -->
+            <!-- [ngClass]="{'Is-PC': IsPC}  flex col to row nowrap-->
+
+
+
+
+        </ng-container>
+    </div>
+</ng-container>

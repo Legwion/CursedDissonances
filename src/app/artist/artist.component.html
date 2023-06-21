@@ -1,0 +1,116 @@
+<div class="bgArtist" [ngClass]="{'Is-PC' : IsPC}">
+
+    <div class="main flexcol">
+        <!-- class fondo flex col 3 items -->
+        <div class="box flexcol">
+            <!-- class center info + flex col 2 items -->
+            <!-- [ngClass]="{'Is-PC': IsPC}" flex col to row-->
+
+
+            <div class="center">
+                <!--  name (resize if no desc) + desc ngif  -->
+                <!-- image -->
+                <div class="flexcol2 center" [ngClass]="{'Is-PC': IsPC}">
+
+                    <img class="imgArt" [ngClass]="{'Is-PC': IsPC}" [src]="artist.img" alt="Photo of {{artist.name}}">
+                    <!-- <h2>{{artist.genre}}</h2> -->
+                    <div class="flexcol desc" [ngClass]="{'Is-PC': IsPC}">
+                        <h1 class="name">{{artist.name | uppercase}}</h1>
+                        <div *ngIf="artist.noDesc
+                      as true">
+
+                            <p class="textleft">
+                                <span [outerHTML]="artist.desc"></span>
+                            </p>
+                        </div>
+                        <!-- <p >{{artist.desc}} </p> -->
+                        <!-- <div>
+                          <span><strong>Hardware:</strong></span>
+                          <ul>
+                              <li *ngFor="let itemDesc of artist.desc2">{{itemDesc}}</li>
+                          </ul> 
+                      </div> -->
+                        <div class="spacer2" *ngIf="IsPC"></div>
+                        <div class="flexrrss">
+                            <!-- rrss -->
+                            <a *ngIf="artist.IgLink" [href]="artist.IgLink">
+                                <div class="instagram"> </div>
+                            </a>
+                            <a *ngIf="artist.ScLink" [href]="artist.ScLink">
+                                <div class="soundcloud"> </div>
+                            </a>
+
+                            <a *ngIf="artist.SpLink" [href]="artist.SpLink">
+                                <div class="spotify"> </div>
+                            </a>
+                            <a *ngIf="artist.BcLink" [href]="artist.BcLink">
+                                <div class="bandcamp"> </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="center" *ngIf="artist.hasAlbum as true">
+                <div class="flexcol center" [ngClass]="{'Is-PC': IsPC}">
+                    <h3>ALBUMS:</h3>
+                    <div *ngFor="let album of artist.albums">
+                        <a *ngIf="album.BcUrl" [href]="album.BcUrl">
+                            <div class="flexcol boxAlb">
+                                <div class="flexcol center" [ngClass]="{'Is-PC': IsPC}">
+                                    <div class="flexcol">
+
+                                        <h4>{{album.name}}</h4>
+
+                                        <img class="img" [ngClass]="{'Is-PC': IsPC}" [src]="album.img">
+                                    </div>
+
+                                    <div style="padding: 4vw 0vw 0vw 0vw;" *ngIf="IsPC">
+                                        <div *ngFor="let songs of album.songs">
+                                            <ul> -{{songs.name}}</ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- class center info +  flex col wrap -->
+            <!-- [ngClass]="{'Is-PC': IsPC}" flex col to row-->
+            <div class="center">
+
+                <div class="center flexcol" [ngClass]="{'Is-PC': IsPC}">
+                    <h3 class="subspacer" *ngIf="artist.Active">RELEASES:</h3>
+
+                    <div *ngFor="let release of artist.releases">
+                        <div class="flexcol boxRel center">
+                            <h4>{{release.name}}</h4>
+                            <img class="img" [ngClass]="{'Is-PC' : IsPC}" [src]="release.img">
+                            <a class="aLink" *ngIf="release.BcUrl" [href]="release.BcUrl">Escucha en BandCamp</a>
+                            <a class="aLink" *ngIf="release.ScUrl" [href]="release.ScUrl"> Escucha en Soundcloud</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <ng-container 3>
+                <!-- class center info +  flex col wrap -->
+                <!-- [ngClass]="{'Is-PC': IsPC}" flex row to col-->
+
+                <ng-container>
+                    <!-- releases card ng for -->
+                </ng-container>
+            </ng-container>
+        </div>
+
+        <div class="spacer">
+
+        </div>
+    </div>
+</div>

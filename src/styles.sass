@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+.hidden
+  display: none
+
+.flexcol
+  display: flex
+  flex-flow: column nowrap
+
+.flexcol.Is-PC
+  display: flex
+  flex-flow: row wrap
+
+.flexrow
+  display: flex
+  flex-flow: row wrap
+  // justify-content: center
+
+.center
+  text-align: center
+  justify-items: center
+  justify-content: center
+
+.box
+  margin: 2.5vw 2vw 2.5vw 1vw
+  padding: 3vw
+  background-color: #00000069
+  border-radius: 3px
+
+.box.Is-PC
+  padding: 1vw
+  margin: 0vw 1vw 1vw 1vw
+
+.breaker
+  height: 2.5px
+  margin: 2vw 10vw
+  background-color: #ffffffb7
+  border-radius: 5px
+  justify-items: center
+
+.main
+  // padding: 1vw
+  margin: 0vw 4vw 0vw 4vw
+  // min-height: 100%
+  overflow: hidden
+
+.main.Is-PC
+  margin: 0vw 1vw 0vw 1vw
+
+.bgblack
+  background-color: black
+
+h1, h2, h3,h4, h5, h6, p, a, ul, li
+  color: white
+
+a
+  text-decoration: none
+
+.height
+  height: 100%
+
+// Backgrounds
+.bg
+  background-image: url(/../../assets/SoulsFalling.png)
+  background-size: cover
+  background-color: gray
+  overflow: show
+  margin: 0vw
+  z-index: -10
+
+.bg.Is-PC
+  background-image: url(/../../assets/BlackIrregulators.png)
+  background-size: cover
+
+.logo
+  width: 384px
+  height: auto
+
+.logo.Is-PC
+  width: 512px
+  height: auto

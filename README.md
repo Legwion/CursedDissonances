@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
 
-You can visit the project in `cursedweb.com`.
+You can visit the project in [this link](www.cursedweb.com).
 
 ## Development server
 
